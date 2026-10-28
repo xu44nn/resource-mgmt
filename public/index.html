@@ -1,8 +1,55 @@
-<html>
-    <head>
-        <title>DVOPS - Resource Management Web App</title>
-    </head>
-    <body>
-        Welcome to my Resource Management Web Application. In this application, users will get to manage resources.
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>DVOPS - Resource Management Web App</title>
+ 
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          rel="stylesheet">
+ 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+ 
+    <!-- JavaScript -->
+    <script src="js/view-resources.js" defer></script>
+</head>
+ 
+<body onload="viewResources()">
+ 
+    <div class="container mt-5">
+ 
+        <!-- Logo -->
+        <div class="row justify-content-center mb-4">
+            <img src="images/logo.png" alt="Resource Management Logo">
+        </div>
+ 
+        <!-- Resource Table -->
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+ 
+                <table class="table table-striped table-striped-custom">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Location</th>
+                            <th>Description</th>
+                            <th>Owner</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+ 
+                    <tbody id="tableContent">
+                    </tbody>
+                </table>
+ 
+            </div>
+        </div>
+ 
+    </div>
+ 
+</body>
 </html>
