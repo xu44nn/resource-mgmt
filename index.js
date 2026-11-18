@@ -19,6 +19,7 @@ res.sendFile(__dirname + "/public/" + startPage);
 server = app.listen(PORT, function () {
 const address = server.address();
 const baseUrl = `http://${address.address == "::" ? 'localhost' :
+    [
 address.address}:${address.port}`;
 console.log(`Demo project at: ${baseUrl}`);
 });
